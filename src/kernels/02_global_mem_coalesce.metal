@@ -8,8 +8,7 @@ kernel void fxn(
     constant float& ALPHA,
     constant float& BETA,
     uint3 gid [[ threadgroup_position_in_grid ]],
-    uint3 lid [[ thread_position_in_threadgroup ]],
-    uint3 blockdim [[ threads_per_threadgroup ]]
+    uint3 lid [[ thread_position_in_threadgroup ]]
 ) {
     const uint BLOCKSIZE = 32;
     const uint x = gid.x * BLOCKSIZE + (lid.x / BLOCKSIZE);
