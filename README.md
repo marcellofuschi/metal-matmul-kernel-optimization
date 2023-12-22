@@ -1,8 +1,8 @@
-# How to Optimize a Metal Matmul Kernel
+# Optimizing a Metal Matmul Kernel
 
-[This blog post](https://siboehm.com/articles/22/CUDA-MMM) by siboehm explains how to iteratively improve the performance of a CUDA kernel for matrix multiplication.
+[siboehm's post](https://siboehm.com/articles/22/CUDA-MMM) explains how to iteratively improve the performance of a CUDA kernel for matrix multiplication.
 
-In this repo, I reimplemented the kernels on [Metal](https://developer.apple.com/documentation/metal), Apple's GPUs compute API.
+This repo contains a reimplementation of those kernels (not all yet) on [Metal](https://developer.apple.com/documentation/metal), Apple's GPUs compute API.
 
 ## Running a kernel
 
